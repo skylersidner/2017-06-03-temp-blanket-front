@@ -7,7 +7,7 @@ weatherDate = () => {
     this.getLastYear = () => {
         return promiseRequest('GET', 'http://' + DOMAIN + '/weatherDate/lastYear').then(
             (success) => {
-                return success.target.response;
+                return JSON.parse(success.target.response);
             },
             (fail) => {
                 return fail.target.statusText;

@@ -2,7 +2,12 @@
 
 
 /*
- * To create a new service, name a function and add the name of
+ * To create a new service just name a function and add the name to
  * the service object as a call for the function.
+ *
+ *
+ * e.g.
+ * serviceName = () => {};
+ * service.serviceName = serviceName();
  */
 let service = {};
